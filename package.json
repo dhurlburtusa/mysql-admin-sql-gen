@@ -66,8 +66,13 @@
     "lint-staged": "^8.1.7",
     "rimraf": "^2.6.3"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  },
   "scripts": {
-    "build": "",
+    "build": "echo 'No explicit build necessary at this moment.'",
     "clean": "rimraf dist/",
     "precommit": "lint-staged",
     "lint": "npm run lint:js",
