@@ -1,0 +1,83 @@
+{
+  "name": "mysql-admin-sql-gen",
+  "version": "0.0.0-alpha",
+  "description": "A library for generating MySQL administrative SQL statements.",
+  "keywords": [
+    "administration",
+    "administrative",
+    "bookshelf",
+    "browser",
+    "create",
+    "create database",
+    "create role",
+    "create user",
+    "drop",
+    "drop database",
+    "drop role",
+    "drop user",
+    "generate",
+    "generation",
+    "grant",
+    "knex",
+    "library",
+    "mysql",
+    "node",
+    "revoke",
+    "sequelize",
+    "squel",
+    "sql",
+    "statements",
+    "utilities",
+    "web"
+  ],
+  "author": {
+    "name": "Danny Hurlburt",
+    "email": "dhurlburtusa@users.noreply.github.com",
+    "url": "https://github.com/dhurlburtusa"
+  },
+  "homepage": "https://github.com/dhurlburtusa/mysql-admin-sql-gen#readme",
+  "license": "ISC",
+  "engines": {
+    "node": ">=7.10.1"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "main": "index.js",
+  "bugs": {
+    "email": "dhurlburtusa@users.noreply.github.com",
+    "url": "https://github.com/dhurlburtusa/mysql-admin-sql-gen/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhurlburtusa/mysql-admin-sql-gen.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
+    "rimraf": "^2.6.3"
+  },
+  "scripts": {
+    "build": "",
+    "clean": "rimraf dist/",
+    "precommit": "lint-staged",
+    "lint": "npm run lint:js",
+    "lint:fix": "npm run lint:fix:js",
+    "lint:fix:js": "npm run lint:js --fix",
+    "lint:js": "eslint --ignore-path .eslintignore --ignore-pattern \"!**/.*\" .",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "npm run test:unit",
+    "test:coverage": "npm run test:unit -- --coverage",
+    "test:unit": "jest --config=__tests__/unit/jest.config.js",
+    "travisci": "npm run build"
+  }
+}
