@@ -59,6 +59,7 @@
     "@pika/pack": "^0.3.7",
     "@pika/plugin-build-node": "^0.4.0",
     "@pika/plugin-standard-pkg": "^0.4.0",
+    "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.3",
@@ -90,6 +91,7 @@
     "prebuild": "mkdirp pkg",
     "build": "pack build",
     "clean": "rimraf pkg/",
+    "coveralls": "cat ./__tests__/unit/coverage/lcov.info | coveralls",
     "precommit": "lint-staged",
     "lint": "npm run lint:js",
     "lint:fix": "npm run lint:fix:js",
@@ -100,6 +102,6 @@
     "test": "npm run test:unit",
     "test:coverage": "npm run test:unit -- --coverage",
     "test:unit": "jest --config=__tests__/unit/jest.config.js",
-    "travisci": "npm run build"
+    "travisci": "npm run lint && npm run test:coverage"
   }
 }
