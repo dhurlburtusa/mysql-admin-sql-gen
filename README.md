@@ -4,7 +4,8 @@ A library for generating MySQL administrative SQL statements. Similar to [Squel]
 
 Note: This library does NOT provide the ability to connect to a MySQL database and therefore also does NOT execute generated SQL. There are several packages that can be used for executing the generated SQL: [bookshelf][npm-bookshelf], [knex][npm-knex], [mysql][npm-mysql], [mysql2][npm-mysql2], [sequelize][npm-sequelize], etc.
 
-
+[![Build Status][travis-svg]][travis-url]
+[![Coverage Status][coverage-image]][coverage-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
@@ -72,7 +73,8 @@ These examples are just the tip of the iceberg. See the unit tests for a complet
 
 ISC
 
-
+[coverage-image]: https://coveralls.io/repos/github/dhurlburtusa/mysql-admin-sql-gen/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/dhurlburtusa/mysql-admin-sql-gen?branch=master
 [downloads-image]: http://img.shields.io/npm/dm/mysql-admin-sql-gen.svg
 [downloads-url]: http://npm-stat.com/charts.html?package=mysql-admin-sql-gen
 [license-image]: http://img.shields.io/npm/l/mysql-admin-sql-gen.svg
@@ -85,3 +87,5 @@ ISC
 [npm-sequelize]: https://www.npmjs.com/package/sequelize
 [package-url]: https://npmjs.org/package/mysql-admin-sql-gen
 [squel]: https://www.npmjs.com/package/squel
+[travis-svg]: https://travis-ci.org/dhurlburtusa/mysql-admin-sql-gen.svg?branch=master
+[travis-url]: https://travis-ci.org/dhurlburtusa/mysql-admin-sql-gen
