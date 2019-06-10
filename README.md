@@ -57,6 +57,16 @@ const sql = grant({
 These examples are just the tip of the iceberg. See the unit tests for a complete set of usage examples.
 
 
+## Maintainers
+
+- [Danny Hurlburt](https://github.com/dhurlburtusa)
+
+
+## License
+
+ISC
+
+
 [npm-bookshelf]: https://www.npmjs.com/package/bookshelf
 [npm-knex]: https://www.npmjs.com/package/knex
 [npm-mysql]: https://www.npmjs.com/package/mysql
