@@ -1,4 +1,4 @@
-const roleToSql = require('./helpers/roleToSql')
+import roleToSql from './helpers/roleToSql'
 
 function dropRole (roles, options = {}) {
   const { ifExists } = options
@@ -14,4 +14,4 @@ function dropRole (roles, options = {}) {
 
 }
 
-module.exports = dropRole
+export default dropRole

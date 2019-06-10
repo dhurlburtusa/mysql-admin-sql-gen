@@ -1,4 +1,4 @@
-const quoteIdentifier = require('./quoteIdentifier')
+import quoteIdentifier from './quoteIdentifier'
 
 function starOrEscape (identifier) {
   let sql
@@ -42,4 +42,4 @@ function objectLevelToSql (level) {
   return sql
 }
 
-module.exports = objectLevelToSql
+export default objectLevelToSql

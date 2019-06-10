@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const identifiedToSql = require('../../../../lib/helpers/identifiedToSql')
+import identifiedToSql from '../../../../src/helpers/identifiedToSql'
 
 describe('helpers/identifiedToSql.js', () => {
 

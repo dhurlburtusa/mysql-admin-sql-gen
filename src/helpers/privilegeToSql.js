@@ -1,4 +1,4 @@
-const quoteIdentifier = require('./quoteIdentifier')
+import quoteIdentifier from './quoteIdentifier'
 
 function privilegeToSql (privilege) {
   let sql
@@ -29,4 +29,4 @@ function privilegeToSql (privilege) {
   return sql
 }
 
-module.exports = privilegeToSql
+export default privilegeToSql

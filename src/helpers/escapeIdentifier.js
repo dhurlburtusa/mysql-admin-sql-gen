@@ -6,4 +6,4 @@ function escapeIdentifier (identifier) {
   return out
 }
 
-module.exports = escapeIdentifier
+export default escapeIdentifier

@@ -1,4 +1,4 @@
-const quoteIdentifier = require('./helpers/quoteIdentifier')
+import quoteIdentifier from './helpers/quoteIdentifier'
 
 function dropDatabase (database, options = {}) {
   const { ifExists } = options
@@ -10,4 +10,4 @@ function dropDatabase (database, options = {}) {
   return sql
 }
 
-module.exports = dropDatabase
+export default dropDatabase

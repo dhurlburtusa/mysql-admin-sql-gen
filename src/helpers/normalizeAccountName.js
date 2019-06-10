@@ -10,4 +10,4 @@ function normalizeAccountName (accountNameIn) {
   return accountNameOut
 }
 
-module.exports = normalizeAccountName
+export default normalizeAccountName

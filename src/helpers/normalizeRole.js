@@ -9,4 +9,4 @@ function normalizeRole (roleIn) {
   return roleOut
 }
 
-module.exports = normalizeRole
+export default normalizeRole

@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const dropRole = require('../../../lib/dropRole')
+import dropRole from '../../../src/dropRole'
 
 describe('dropRole.js', () => {
 

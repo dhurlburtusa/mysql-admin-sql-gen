@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const revoke = require('../../../lib/revoke')
+import revoke from '../../../src/revoke'
 
 describe('revoke.js', () => {
 

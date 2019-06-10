@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const accountNameToSql = require('../../../../lib/helpers/accountNameToSql')
+import accountNameToSql from '../../../../src/helpers/accountNameToSql'
 
 describe('helpers/accountNameToSql.js', () => {
 

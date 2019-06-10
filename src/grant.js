@@ -1,6 +1,6 @@
-const objectToSql = require('./helpers/objectToSql')
-const privilegeToSql = require('./helpers/privilegeToSql')
-const roleToSql = require('./helpers/roleToSql')
+import objectToSql from './helpers/objectToSql'
+import privilegeToSql from './helpers/privilegeToSql'
+import roleToSql from './helpers/roleToSql'
 
 function grant (options) {
   let sql
@@ -58,4 +58,4 @@ function grant (options) {
   return sql
 }
 
-module.exports = grant
+export default grant

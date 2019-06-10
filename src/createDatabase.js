@@ -1,4 +1,4 @@
-const quoteIdentifier = require('./helpers/quoteIdentifier')
+import quoteIdentifier from './helpers/quoteIdentifier'
 
 // https://dev.mysql.com/doc/refman/8.0/en/create-database.html
 function createDatabase (database, options = {}) {
@@ -21,4 +21,4 @@ function createDatabase (database, options = {}) {
   return sql
 }
 
-module.exports = createDatabase
+export default createDatabase

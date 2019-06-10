@@ -17,9 +17,9 @@ For many projects, these administrative SQL statements are not configuration-dri
 **Creating a Database**
 
 ```js
-const createDatabase = require('mysql-admin-sql-gen/lib/createDatabase')
+import { createDatabase } from 'mysql-admin-sql-gen'
 
-const dbConfig = require('./database-config')
+import dbConfig from './database-config'
 
 const sql = createDatabase(dbConfig.database, { ifNotExists: true })
 ```
@@ -27,9 +27,9 @@ const sql = createDatabase(dbConfig.database, { ifNotExists: true })
 **Creating a User**
 
 ```js
-const createUser = require('mysql-admin-sql-gen/lib/createUser')
+import { createUser } from 'mysql-admin-sql-gen'
 
-const dbConfig = require('./database-config')
+import dbConfig from './database-config'
 
 const sql = createUser(dbConfig.user, { ifNotExists: true })
 ```

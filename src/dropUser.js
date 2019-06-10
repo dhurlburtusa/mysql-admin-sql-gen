@@ -1,5 +1,5 @@
-const accountNameToSql = require('./helpers/accountNameToSql')
-const normalizeUser = require('./helpers/normalizeUser')
+import accountNameToSql from './helpers/accountNameToSql'
+import normalizeUser from './helpers/normalizeUser'
 
 function dropUser (users, options = {}) {
   const { ifExists } = options
@@ -22,4 +22,4 @@ function dropUser (users, options = {}) {
 
 }
 
-module.exports = dropUser
+export default dropUser

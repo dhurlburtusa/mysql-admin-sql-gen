@@ -1,6 +1,6 @@
-const objectToSql = require('./helpers/objectToSql')
-const privilegeToSql = require('./helpers/privilegeToSql')
-const roleToSql = require('./helpers/roleToSql')
+import objectToSql from './helpers/objectToSql'
+import privilegeToSql from './helpers/privilegeToSql'
+import roleToSql from './helpers/roleToSql'
 
 function revoke (options) {
   let sql
@@ -53,4 +53,4 @@ function revoke (options) {
   return sql
 }
 
-module.exports = revoke
+export default revoke

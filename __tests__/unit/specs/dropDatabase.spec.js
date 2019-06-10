@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const dropDatabase = require('../../../lib/dropDatabase')
+import dropDatabase from '../../../src/dropDatabase'
 
 describe('dropDatabase.js', () => {
 

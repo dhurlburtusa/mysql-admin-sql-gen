@@ -1,4 +1,4 @@
-const escapeName = require('./escapeName')
+import escapeName from './escapeName'
 
 function identifiedToSql (identified) {
   let sql = ''
@@ -16,4 +16,4 @@ function identifiedToSql (identified) {
   return sql
 }
 
-module.exports = identifiedToSql
+export default identifiedToSql

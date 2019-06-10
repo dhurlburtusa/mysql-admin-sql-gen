@@ -1,5 +1,5 @@
-const escapeName = require('./escapeName')
-const normalizeAccountName = require('./normalizeAccountName')
+import escapeName from './escapeName'
+import normalizeAccountName from './normalizeAccountName'
 
 const AT_BLANK_HOST__RE = /@''$/
 
@@ -19,4 +19,4 @@ function accountNameToSql (accountName) {
   return sql
 }
 
-module.exports = accountNameToSql
+export default accountNameToSql
