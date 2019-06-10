@@ -38,6 +38,22 @@ import dbConfig from './database-config'
 const sql = createUser(dbConfig.user, { ifNotExists: true })
 ```
 
+**Grant Privileges**
+
+```js
+import { grant } from 'mysql-admin-sql-gen'
+
+import dbConfig from './database-config'
+
+const sql = grant({
+  privileges: ['EXECUTE', 'SELECT'],
+  on: {
+    level: { database: 'example' },
+  },
+  to: dbConfig.user,
+})
+```
+
 These examples are just the tip of the iceberg. See the unit tests for a complete set of usage examples.
 
 
