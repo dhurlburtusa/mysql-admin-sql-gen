@@ -11,6 +11,10 @@ Almost all, if not all, ORM's expect that the role(s), user(s), database(s), et 
 
 For many projects, these administrative SQL statements are not configuration-driven, and hard coding them is perfectly valid. But for those projects that are configuration-driven, an API provides some benefit. For example, this library will properly escape special characters for the arguments that need it.
 
+This library works in the browser too.
+
+Have online documentation? Use it to provide data-driven documentation.
+
 
 ## Examples
 
