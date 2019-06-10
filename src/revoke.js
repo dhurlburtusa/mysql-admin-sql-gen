@@ -2,6 +2,7 @@ import objectToSql from './helpers/objectToSql'
 import privilegeToSql from './helpers/privilegeToSql'
 import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/revoke.html
 function revoke (options) {
   let sql
   let { from, on, privileges, proxy } = options

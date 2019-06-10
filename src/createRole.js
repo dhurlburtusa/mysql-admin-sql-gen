@@ -1,5 +1,6 @@
 import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/create-role.html
 function createRole (roles, options = {}) {
   if (!Array.isArray(roles)) {
     roles = [roles]

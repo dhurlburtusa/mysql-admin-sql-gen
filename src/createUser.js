@@ -3,6 +3,7 @@ import identifiedToSql from './helpers/identifiedToSql'
 import normalizeUser from './helpers/normalizeUser'
 import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/create-user.html
 function createUser (users, options = {}) {
   let {
     ifNotExists,

@@ -1,5 +1,6 @@
 import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/drop-role.html
 function dropRole (roles, options = {}) {
   const { ifExists } = options
   if (!Array.isArray(roles)) {
