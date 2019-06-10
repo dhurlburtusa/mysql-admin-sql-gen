@@ -6,4 +6,4 @@ function escapeName (name) {
   return out
 }
 
-module.exports = escapeName
+export default escapeName

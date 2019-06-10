@@ -1,5 +1,6 @@
-const roleToSql = require('./helpers/roleToSql')
+import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/create-role.html
 function createRole (roles, options = {}) {
   if (!Array.isArray(roles)) {
     roles = [roles]
@@ -13,4 +14,4 @@ function createRole (roles, options = {}) {
   return sql
 }
 
-module.exports = createRole
+export default createRole

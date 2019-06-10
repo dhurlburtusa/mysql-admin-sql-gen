@@ -1,5 +1,6 @@
-const quoteIdentifier = require('./helpers/quoteIdentifier')
+import quoteIdentifier from './helpers/quoteIdentifier'
 
+// https://dev.mysql.com/doc/refman/8.0/en/drop-database.html
 function dropDatabase (database, options = {}) {
   const { ifExists } = options
   const sql = [
@@ -10,4 +11,4 @@ function dropDatabase (database, options = {}) {
   return sql
 }
 
-module.exports = dropDatabase
+export default dropDatabase

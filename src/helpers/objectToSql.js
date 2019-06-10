@@ -1,4 +1,4 @@
-const objectLevelToSql = require('./objectLevelToSql')
+import objectLevelToSql from './objectLevelToSql'
 
 function objectToSql (object) {
   const { level, type } = object
@@ -13,4 +13,4 @@ function objectToSql (object) {
   return sql
 }
 
-module.exports = objectToSql
+export default objectToSql

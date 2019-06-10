@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const createDatabase = require('../../../lib/createDatabase')
+import createDatabase from '../../../src/createDatabase'
 
 describe('createDatabase.js', () => {
 

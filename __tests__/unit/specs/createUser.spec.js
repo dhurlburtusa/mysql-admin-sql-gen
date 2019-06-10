@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const createUser = require('../../../lib/createUser')
+import createUser from '../../../src/createUser'
 
 describe('createUser.js', () => {
 

@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const roleToSql = require('../../../../lib/helpers/roleToSql')
+import roleToSql from '../../../../src/helpers/roleToSql'
 
 describe('helpers/roleToSql.js', () => {
 

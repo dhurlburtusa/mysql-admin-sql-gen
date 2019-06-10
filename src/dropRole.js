@@ -1,5 +1,6 @@
-const roleToSql = require('./helpers/roleToSql')
+import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/drop-role.html
 function dropRole (roles, options = {}) {
   const { ifExists } = options
   if (!Array.isArray(roles)) {
@@ -14,4 +15,4 @@ function dropRole (roles, options = {}) {
 
 }
 
-module.exports = dropRole
+export default dropRole

@@ -15,7 +15,7 @@ module.exports = {
   rootDir: '../../',
   roots: [
     `${testRoot}specs/`,
-    '<rootDir>/lib/',
+    '<rootDir>/src/',
   ],
 
   setupFiles: [

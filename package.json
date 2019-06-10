@@ -1,6 +1,6 @@
 {
   "name": "mysql-admin-sql-gen",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "description": "A library for generating MySQL administrative SQL statements.",
   "keywords": [
     "administration",
@@ -42,7 +42,7 @@
   },
   "files": [
     "index.js",
-    "lib/"
+    "src/"
   ],
   "main": "index.js",
   "bugs": {
@@ -55,6 +55,11 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "@pika/pack": "^0.3.7",
+    "@pika/plugin-build-node": "^0.4.0",
+    "@pika/plugin-standard-pkg": "^0.4.0",
+    "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.3",
@@ -64,7 +69,18 @@
     "husky": "^2.4.0",
     "jest": "^24.8.0",
     "lint-staged": "^8.1.7",
+    "mkdirp": "^0.5.1",
     "rimraf": "^2.6.3"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ]
+    ]
   },
   "husky": {
     "hooks": {
@@ -72,17 +88,20 @@
     }
   },
   "scripts": {
-    "build": "echo 'No explicit build necessary at this moment.'",
-    "clean": "rimraf dist/",
+    "prebuild": "mkdirp pkg",
+    "build": "pack build",
+    "clean": "rimraf pkg/",
+    "coveralls": "cat ./__tests__/unit/coverage/lcov.info | coveralls",
     "precommit": "lint-staged",
     "lint": "npm run lint:js",
     "lint:fix": "npm run lint:fix:js",
     "lint:fix:js": "npm run lint:js --fix",
     "lint:js": "eslint --ignore-path .eslintignore --ignore-pattern \"!**/.*\" .",
-    "prepublishOnly": "npm run clean && npm run build",
+    "publish": "pack publish",
+    "prepublishOnly": "npm run lint && npm run test:coverage && npm run clean && npm run build",
     "test": "npm run test:unit",
     "test:coverage": "npm run test:unit -- --coverage",
     "test:unit": "jest --config=__tests__/unit/jest.config.js",
-    "travisci": "npm run build"
+    "travisci": "npm run lint && npm run test:coverage"
   }
 }

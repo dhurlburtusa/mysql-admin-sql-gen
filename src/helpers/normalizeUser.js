@@ -10,4 +10,4 @@ function normalizeUser (userIn) {
   return userOut
 }
 
-module.exports = normalizeUser
+export default normalizeUser

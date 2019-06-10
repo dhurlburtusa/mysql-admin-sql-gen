@@ -1,7 +1,7 @@
-const escapeIdentifier = require('./escapeIdentifier')
+import escapeIdentifier from './escapeIdentifier'
 
 function quoteIdentifier (identifier) {
   return `\`${escapeIdentifier(identifier)}\``
 }
 
-module.exports = quoteIdentifier
+export default quoteIdentifier

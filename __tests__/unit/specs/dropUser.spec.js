@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const dropUser = require('../../../lib/dropUser')
+import dropUser from '../../../src/dropUser'
 
 describe('dropUser.js', () => {
 

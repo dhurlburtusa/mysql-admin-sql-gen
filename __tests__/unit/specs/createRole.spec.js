@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const createRole = require('../../../lib/createRole')
+import createRole from '../../../src/createRole'
 
 describe('createRole.js', () => {
 

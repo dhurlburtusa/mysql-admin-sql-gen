@@ -1,8 +1,9 @@
-const accountNameToSql = require('./helpers/accountNameToSql')
-const identifiedToSql = require('./helpers/identifiedToSql')
-const normalizeUser = require('./helpers/normalizeUser')
-const roleToSql = require('./helpers/roleToSql')
+import accountNameToSql from './helpers/accountNameToSql'
+import identifiedToSql from './helpers/identifiedToSql'
+import normalizeUser from './helpers/normalizeUser'
+import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/create-user.html
 function createUser (users, options = {}) {
   let {
     ifNotExists,
@@ -35,4 +36,4 @@ function createUser (users, options = {}) {
   return sql
 }
 
-module.exports = createUser
+export default createUser

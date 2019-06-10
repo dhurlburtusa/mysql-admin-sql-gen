@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const grant = require('../../../lib/grant')
+import grant from '../../../src/grant'
 
 describe('grant.js', () => {
 

@@ -1,7 +1,8 @@
-const objectToSql = require('./helpers/objectToSql')
-const privilegeToSql = require('./helpers/privilegeToSql')
-const roleToSql = require('./helpers/roleToSql')
+import objectToSql from './helpers/objectToSql'
+import privilegeToSql from './helpers/privilegeToSql'
+import roleToSql from './helpers/roleToSql'
 
+// https://dev.mysql.com/doc/refman/8.0/en/revoke.html
 function revoke (options) {
   let sql
   let { from, on, privileges, proxy } = options
@@ -53,4 +54,4 @@ function revoke (options) {
   return sql
 }
 
-module.exports = revoke
+export default revoke

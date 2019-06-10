@@ -4,12 +4,14 @@
 # level as this file.  Directories not beginning with a `/` will match
 # sub-directories too.
 
+# building
+/pkg/
+
 # dependencies
 /node_modules/
 
 # testing
 /__tests__/unit/coverage/
-/coverage/
 
 .DS_Store
 

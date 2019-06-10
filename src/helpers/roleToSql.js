@@ -1,5 +1,5 @@
-const accountNameToSql = require('./accountNameToSql')
-const normalizeRole = require('./normalizeRole')
+import accountNameToSql from './accountNameToSql'
+import normalizeRole from './normalizeRole'
 
 function roleToSql (role) {
   let r = normalizeRole(role)
@@ -14,4 +14,4 @@ function roleToSql (role) {
   return sql
 }
 
-module.exports = roleToSql
+export default roleToSql
