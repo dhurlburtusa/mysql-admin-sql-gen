@@ -25,6 +25,9 @@ describe('createUser.js', () => {
       sql = createUser({}) // Anonymous user
       expect(sql).toBe("CREATE USER '';")
 
+      sql = createUser({ name: '' }) // Anonymous user
+      expect(sql).toBe("CREATE USER '';")
+
       sql = createUser({ name: 'admin' })
       expect(sql).toBe("CREATE USER 'admin';")
 
