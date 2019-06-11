@@ -2,6 +2,8 @@
 
 A library for generating MySQL administrative SQL statements. Similar to [Squel] but for `CREATE DATABASE`, `CREATE ROLE`, `CREATE USER`, `GRANT`, and other administrative statements.
 
+(If anyone knows of a JavaScript/Node.js library that performs the same or nearly the same functionality as this library, [please let me know](https://github.com/dhurlburtusa/mysql-admin-sql-gen/issues). I searched for an hour or two looking for a similar library before I decided to create this library.)
+
 Note: This library does NOT provide the ability to connect to a MySQL database and therefore also does NOT execute generated SQL. There are several packages that can be used for executing the generated SQL: [bookshelf][npm-bookshelf], [knex][npm-knex], [mysql][npm-mysql], [mysql2][npm-mysql2], [sequelize][npm-sequelize], etc.
 
 [![Build Status][travis-svg]][travis-url]
