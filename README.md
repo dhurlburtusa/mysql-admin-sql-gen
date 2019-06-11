@@ -6,12 +6,16 @@ A library for generating MySQL administrative SQL statements. Similar to [Squel]
 
 Note: This library does NOT provide the ability to connect to a MySQL database and therefore also does NOT execute generated SQL. There are several packages that can be used for executing the generated SQL: [bookshelf][npm-bookshelf], [knex][npm-knex], [mysql][npm-mysql], [mysql2][npm-mysql2], [sequelize][npm-sequelize], etc.
 
-[![Build Status][travis-svg]][travis-url]
-[![Coverage Status][coverage-image]][coverage-url]
+[![GitHub Repo][github-repo-image]][github-repo-url]
+[![NPM Version][npm-version-image]][npm-url]
+[![Minimum Node Version][node-version-min-image]][node-dist-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][coverage-image]][coverage-url]
 [![License][license-image]][license-url]
-[![Downloads][downloads-image]][downloads-url]
-
-[![npm badge][npm-badge-png]][package-url]
+[![Lines of Code][codeclimate-loc-image]][codeclimate-loc-url]
+[![Gzip Size][gzip-image]][bundlephobia-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![GitHub Stars][github-stars-image]][github-stars-url]
 
 
 ## Why?
@@ -88,19 +92,30 @@ These examples are just the tip of the iceberg. See the unit tests for a complet
 
 ISC
 
-[coverage-image]: https://coveralls.io/repos/github/dhurlburtusa/mysql-admin-sql-gen/badge.svg?branch=master
+
+[bundlephobia-url]: https://bundlephobia.com/result?p=mysql-admin-sql-gen
+[codeclimate-loc-image]: https://badgen.net/codeclimate/loc/dhurlburtusa/mysql-admin-sql-gen
+[codeclimate-loc-url]: https://codeclimate.com/github/dhurlburtusa/mysql-admin-sql-gen/trends/loc
+[coverage-image]: https://badgen.net/coveralls/c/github/dhurlburtusa/mysql-admin-sql-gen/master
 [coverage-url]: https://coveralls.io/github/dhurlburtusa/mysql-admin-sql-gen?branch=master
-[downloads-image]: http://img.shields.io/npm/dm/mysql-admin-sql-gen.svg
+[downloads-image]: https://badgen.net/npm/dw/mysql-admin-sql-gen
 [downloads-url]: http://npm-stat.com/charts.html?package=mysql-admin-sql-gen
-[license-image]: http://img.shields.io/npm/l/mysql-admin-sql-gen.svg
+[github-repo-image]: https://badgen.net/badge/-/github?icon=github&label
+[github-repo-url]: https://github.com/dhurlburtusa/mysql-admin-sql-gen
+[github-stars-image]: https://badgen.net/github/stars/dhurlburtusa/mysql-admin-sql-gen
+[github-stars-url]: https://github.com/dhurlburtusa/mysql-admin-sql-gen/stargazers
+[gzip-image]: https://badgen.net/bundlephobia/minzip/mysql-admin-sql-gen
+[license-image]: https://badgen.net/npm/license/mysql-admin-sql-gen
 [license-url]: LICENSE
-[npm-badge-png]: https://nodei.co/npm/mysql-admin-sql-gen.png?downloads=true&stars=true
+[node-dist-url]: https://nodejs.org/dist/
+[node-version-min-image]: https://badgen.net/npm/node/mysql-admin-sql-gen
 [npm-bookshelf]: https://www.npmjs.com/package/bookshelf
 [npm-knex]: https://www.npmjs.com/package/knex
 [npm-mysql]: https://www.npmjs.com/package/mysql
 [npm-mysql2]: https://www.npmjs.com/package/mysql2
+[npm-version-image]: https://badgen.net/npm/v/mysql-admin-sql-gen
 [npm-sequelize]: https://www.npmjs.com/package/sequelize
-[package-url]: https://npmjs.org/package/mysql-admin-sql-gen
+[npm-url]: https://www.npmjs.com/package/mysql-admin-sql-gen
 [squel]: https://www.npmjs.com/package/squel
-[travis-svg]: https://travis-ci.org/dhurlburtusa/mysql-admin-sql-gen.svg?branch=master
+[travis-image]: https://badgen.net/travis/dhurlburtusa/mysql-admin-sql-gen/master
 [travis-url]: https://travis-ci.org/dhurlburtusa/mysql-admin-sql-gen
