@@ -25,6 +25,17 @@ Have online documentation? Use it to provide data-driven documentation.
 
 ## Examples
 
+```js
+// database-config.js
+const dbConfig = {
+  database: 'example',
+  users: {
+    readonly: { name: 'readonly', host: 'localhost' },
+  },
+}
+export default dbConfig
+```
+
 **Creating a Database**
 
 ```js
@@ -33,6 +44,7 @@ import { createDatabase } from 'mysql-admin-sql-gen'
 import dbConfig from './database-config'
 
 const sql = createDatabase(dbConfig.database, { ifNotExists: true })
+// 'CREATE DATABASE IF NOT EXISTS `example`;'
 ```
 
 **Creating a User**
@@ -42,7 +54,8 @@ import { createUser } from 'mysql-admin-sql-gen'
 
 import dbConfig from './database-config'
 
-const sql = createUser(dbConfig.user, { ifNotExists: true })
+const sql = createUser(dbConfig.users.readonly, { ifNotExists: true })
+// "CREATE USER IF NOT EXISTS 'readonly'@'localhost'"
 ```
 
 **Grant Privileges**
@@ -55,10 +68,11 @@ import dbConfig from './database-config'
 const sql = grant({
   privileges: ['EXECUTE', 'SELECT'],
   on: {
-    level: { database: 'example' },
+    level: { database: dbConfig.database },
   },
-  to: dbConfig.user,
+  to: dbConfig.users.readonly,
 })
+// "GRANT EXECUTE, SELECT ON `example`.* TO 'readonly'@'localhost'"
 ```
 
 These examples are just the tip of the iceberg. See the unit tests for a complete set of usage examples.
