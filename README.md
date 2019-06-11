@@ -20,8 +20,7 @@ For many projects, these administrative SQL statements are not configuration-dri
 
 This library works in the browser too.
 
-Have online documentation? Use it to provide data-driven documentation.
-
+Have online documentation instructing the user to execute some administrative SQL? Use this library to provide data-driven documentation.
 
 ## Examples
 
