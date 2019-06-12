@@ -85,15 +85,19 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run test"
+      "pre-commit": "lint-staged && npm run test"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --ignore-path .eslintignore --ignore-pattern \"!**/.*\""
+    ]
   },
   "scripts": {
     "prebuild": "mkdirp pkg",
     "build": "pack build",
     "clean": "rimraf pkg/",
     "coveralls": "cat ./__tests__/unit/coverage/lcov.info | coveralls",
-    "precommit": "lint-staged",
     "lint": "npm run lint:js",
     "lint:fix": "npm run lint:fix:js",
     "lint:fix:js": "npm run lint:js --fix",
