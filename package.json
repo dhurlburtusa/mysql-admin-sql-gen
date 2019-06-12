@@ -85,13 +85,19 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --ignore-path .eslintignore --ignore-pattern \"!**/.*\""
-    ]
+    "linters": {
+      "*.js": [
+        "eslint --ignore-path .eslintignore --ignore-pattern \"!**/.*\""
+      ],
+      "*": [
+        "jest --bail --config=__tests__/unit/jest.config.js --passWithNoTests --findRelatedTests"
+      ]
+    },
+    "relative": true
   },
   "scripts": {
     "prebuild": "mkdirp pkg",
