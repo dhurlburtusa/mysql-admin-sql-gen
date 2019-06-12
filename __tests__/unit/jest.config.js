@@ -23,6 +23,7 @@ module.exports = {
   ],
 
   testPathIgnorePatterns: [
+    // `${testRoot}specs/alterUser.spec.js`,
     // `${testRoot}specs/createDatabase.spec.js`,
     // `${testRoot}specs/createRole.spec.js`,
     // `${testRoot}specs/createUser.spec.js`,
