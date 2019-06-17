@@ -95,8 +95,8 @@ ISC
 
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=mysql-admin-sql-gen
-[circleci-image]: https://circleci.com/gh/dhurlburtusa/mysql-admin-sql-gen.svg?style=svg
-[circleci-url]: https://circleci.com/gh/dhurlburtusa/mysql-admin-sql-gen
+[circleci-image]: https://circleci.com/gh/dhurlburtusa/mysql-admin-sql-gen/tree/develop.svg?style=svg
+[circleci-url]: https://circleci.com/gh/dhurlburtusa/mysql-admin-sql-gen/tree/develop
 [codeclimate-loc-image]: https://badgen.net/codeclimate/loc/dhurlburtusa/mysql-admin-sql-gen
 [codeclimate-loc-url]: https://codeclimate.com/github/dhurlburtusa/mysql-admin-sql-gen/trends/loc
 [coverage-image]: https://badgen.net/coveralls/c/github/dhurlburtusa/mysql-admin-sql-gen/master
