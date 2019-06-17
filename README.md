@@ -9,6 +9,7 @@ Note: This library does NOT provide the ability to connect to a MySQL database a
 [![GitHub Repo][github-repo-image]][github-repo-url]
 [![NPM Version][npm-version-image]][npm-url]
 [![Minimum Node Version][node-version-min-image]][node-dist-url]
+[![CircleCI][circleci-image]][circleci-url]
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coverage-image]][coverage-url]
 [![License][license-image]][license-url]
@@ -94,6 +95,8 @@ ISC
 
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=mysql-admin-sql-gen
+[circleci-image]: https://circleci.com/gh/dhurlburtusa/mysql-admin-sql-gen.svg?style=svg
+[circleci-url]: https://circleci.com/gh/dhurlburtusa/mysql-admin-sql-gen
 [codeclimate-loc-image]: https://badgen.net/codeclimate/loc/dhurlburtusa/mysql-admin-sql-gen
 [codeclimate-loc-url]: https://codeclimate.com/github/dhurlburtusa/mysql-admin-sql-gen/trends/loc
 [coverage-image]: https://badgen.net/coveralls/c/github/dhurlburtusa/mysql-admin-sql-gen/master
